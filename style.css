@@ -16,8 +16,19 @@
     display: none;
 } */
 
-a[aria-expanded=false] + ul {
-    display: none;
+#v-pills-tab {
+    color: #104269 !important;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-link.active {
+    background-color:  #104269 !important;
+}
+
+#external {
+    padding-left: 5px;
 }
 
 .arc-nav:hover, .arc-nav:focus {
