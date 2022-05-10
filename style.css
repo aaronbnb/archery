@@ -23,8 +23,25 @@
     text-transform: uppercase;
 }
 
-.nav-link.active {
-    background-color:  #104269 !important;
+.custom {
+    display: block;
+    color: #104269;
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.custom.active {
+   background-color: #104269;
+   color: #fff;
+   border-radius: 7px;
+}
+
+
+.custom:hover {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(11, 86, 128, 0.4);
 }
 
 #external {
