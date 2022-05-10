@@ -12,6 +12,14 @@
     text-transform: uppercase;
 }
 
+/* #dd1, #dd2 {
+    display: none;
+} */
+
+a[aria-expanded=false] + ul {
+    display: none;
+}
+
 .arc-nav:hover, .arc-nav:focus {
     text-decoration: underline;
 
