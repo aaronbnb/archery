@@ -63,7 +63,7 @@ if(event.target.getAttribute('aria-expanded') == 'false') {
 }
 else {
     event.target.setAttribute('aria-expanded', 'false')
-    document.getElementById('dd1').remove();
+    document.getElementById('dd2').remove();
     event.target.classList.remove('show')
 }
 });
