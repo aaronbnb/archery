@@ -31,7 +31,7 @@ This web page is for demonstration purposes - to test familiarity with ARC Monit
                 </a>
               </li>
               <li class="nav-item dropdown arc-nav drop">
-                <a class="nav-link dropdown-toggle pe-5" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle pe-5" id="navbarDropdown2" role="button" aria-expanded="false">
                   Visit
                 </a>
               </li>
@@ -39,10 +39,9 @@ This web page is for demonstration purposes - to test familiarity with ARC Monit
                 <a class="nav-link arc-nav" href="https://www.google.com/maps/place/South+Bay+Archery+Club/@33.7386118,-118.3679721,15z/data=!4m2!3m1!1s0x0:0xed732931f840ea05?sa=X&ved=2ahUKEwiixMSDptX3AhUBDkQIHYzyA1wQ_BJ6BAhPEAU">Directions <span style="text-transform:capitalize;padding-left:3px;">(Google Maps)</span><i aria-hidden="true" class="fas fa-external-link-alt" id="external"></i><span class="sr-only">External Link</span></span></a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <button type="button" class="btn btn-primary" id="trigger" data-bs-toggle="modal" data-bs-target="#modal">
+              Sign Up!
+            </button>
           </div>
         </div>
       </nav>
@@ -91,25 +90,36 @@ This web page is for demonstration purposes - to test familiarity with ARC Monit
           </div>
 
       </main>
-      <div class="modal" tabindex="-1" id="pw-dialog">
+      <div class="modal" tabindex="-1" id="modal">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Enter test password</h5>
+              <h5 class="modal-title">Get Updates from <span id="modal-title">ARC-hery Range!</span></h5>
             </div>
+            
             <div class="modal-body">
+              <p style="margin:18px;">Okay, you won't actually receive updates. This form doesn't go anywhere.</p>
                 <form class="row g-3 needs-validation" novalidate>
-                    <div class="col-md-6">
-                        <label for="validationCustom01" class="form-label">Password</label>
-                        <input type="text" class="form-control" id="validationCustom01" required>
+                  <div>
+                    <div class="formy">
+                        <label for="validationCustom01" class="label">Name</label>
+                        <input type="text" class="form-control" id="validationCustom01" required style="width:250px">
                         <div class="invalid-feedback">
-                          Please provide the correct password.
+                          Please provide a name.
                         </div>
                       </div>
+                      <div class="formy">
+                        <label for="validationCustom02" class="label">Email</label>
+                        <input type="text" class="form-control" id="validationCustom02" required style="width:250px">
+                        <div class="invalid-feedback">
+                          Please provide a valid email address.
+                        </div>
+                      </div>
+                      <div style="margin:15px;display:flex;justify-content:center;">
+                        <button type="button" class="btn arc-btn">Submit</button>
+                      </div>
+                    </div>
                 </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary">View Test Site</button>
             </div>
           </div>
         </div>

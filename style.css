@@ -5,6 +5,22 @@
     letter-spacing: 2px;
 }
 
+#modal-title {
+    font-family: 'Shrikhand', cursive !important;
+    font-size: 1.5rem;
+    color: #104269;
+    letter-spacing: 2px;
+    display: block;
+}
+
+.modal-title {
+    margin: 0 auto;
+}
+
+.modal-header {
+    text-align: center;
+}
+
 .arc-nav {
     color: #104269 !important;
     font-family: 'Roboto', sans-serif;
@@ -12,9 +28,22 @@
     text-transform: uppercase;
 }
 
+.formy {
+    padding: 15px;
+}
+
+.formy input {
+    margin : 0 auto;
+}
 /* #dd1, #dd2 {
     display: none;
 } */
+
+label.label {
+width: 250px;
+display: flex;
+    justify-content: center;
+}
 
 #v-pills-tab {
     color: #104269 !important;
@@ -32,12 +61,40 @@
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
+#trigger {
+    width: 150px;
+    background-color: #104269;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.arc-btn {
+    width: 150px;
+    background-color: #104269;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
 .custom.active {
    background-color: #104269;
    color: #fff;
    border-radius: 7px;
 }
 
+#modal {
+    color: #104269;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal-content {
+    border: 2px solid #104269;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px rgba(11, 86, 128, 0.4);
+}
 
 .custom:hover {
     outline: none;
