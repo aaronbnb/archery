@@ -39,7 +39,7 @@ if(event.target.getAttribute('aria-expanded') == 'false') {
   let dropdown = document.createElement('ul')
   dropdown.classList.add('dropdown-menu')     
   dropdown.setAttribute('aria-labelledby', 'navbarDropdown')     
-  dropdown.setAttribute('id', 'dd1');
+  dropdown.setAttribute('id', 'dd2');
   
   let links = ["Individual", "Group", "Party"];
  let i = 0
