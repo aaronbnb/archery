@@ -61,6 +61,10 @@ display: flex;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
+#navbarDropdown1, #navbarDropdown2 {
+    color: #104269;
+}
+
 #trigger {
     width: 150px;
     background-color: #104269;
