@@ -26,12 +26,12 @@ This web page is for demonstration purposes - to test familiarity with ARC Monit
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown arc-nav drop">
-                <a class="nav-link dropdown-toggle px-5" id="navbarDropdown1" role="button" aria-expanded="false">
+                <a class="nav-link dropdown-toggle px-5" id="navbarDropdown1" role="button" aria-expanded="false" href="#expand1">
                   About Us
                 </a>
               </li>
               <li class="nav-item dropdown arc-nav drop">
-                <a class="nav-link dropdown-toggle pe-5" id="navbarDropdown2" role="button" aria-expanded="false">
+                <a class="nav-link dropdown-toggle pe-5" id="navbarDropdown2" role="button" aria-expanded="false" href="#expand2">
                   Visit
                 </a>
               </li>
@@ -39,9 +39,9 @@ This web page is for demonstration purposes - to test familiarity with ARC Monit
                 <a class="nav-link arc-nav" href="https://www.google.com/maps/place/South+Bay+Archery+Club/@33.7386118,-118.3679721,15z/data=!4m2!3m1!1s0x0:0xed732931f840ea05?sa=X&ved=2ahUKEwiixMSDptX3AhUBDkQIHYzyA1wQ_BJ6BAhPEAU">Directions <span style="text-transform:capitalize;padding-left:3px;">(Google Maps)</span><i aria-hidden="true" class="fas fa-external-link-alt" id="external"></i><span class="sr-only">External Link</span></span></a>
               </li>
             </ul>
-            <button type="button" class="btn btn-primary" id="trigger" data-bs-toggle="modal" data-bs-target="#modal">
+            <a role="button" href="modal" class="btn btn-primary" id="trigger" data-bs-toggle="modal" data-bs-target="#modal">
               Sign Up!
-            </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -81,13 +81,13 @@ This web page is for demonstration purposes - to test familiarity with ARC Monit
         </div>
         <div class="main-tabs">
             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <a class="custom active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" href="#tab1" aria-controls="v-pills-home" aria-selected="true">Bow</a>
-              <a class="custom" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" href="#tab2" aria-controls="v-pills-profile" aria-selected="false">Arrows</a>
-              <a class="custom" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" href="#tab3" aria-controls="v-pills-messages" aria-selected="false">Target</a>
-              <a class="custom" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" href="#tab4" aria-controls="v-pills-settings" aria-selected="false">Gloves</a>
+              <a role="tab" class="custom active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" href="#tab1" aria-controls="v-pills-home" aria-selected="true">Bow</a>
+              <a role="tab" class="custom" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" href="#tab2" aria-controls="v-pills-profile" aria-selected="false">Arrows</a>
+              <a role="tab" class="custom" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" href="#tab3" aria-controls="v-pills-messages" aria-selected="false">Target</a>
+              <a role="tab" class="custom" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" href="#tab4" aria-controls="v-pills-settings" aria-selected="false">Gloves</a>
             </div>
             <div class="tab-content" id="v-pills-tabContent">
-              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Every archer needs a trusty bow.</div>
+              <div role="tab"class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">Every archer needs a trusty bow.</div>
               <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">Once you have a bow, you'll need arrows for your mystic journey.</div>
               <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Arrows must have a target. It feels good to hit the target in the bullseye.</div>
               <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">When you practice archery a great deal, your hands become hurt and calloused.</div>
